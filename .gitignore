@@ -10,7 +10,7 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 
-/storage/logs
+/storage/logs/
 .idea
-/tests
+tests/
 .env.example
