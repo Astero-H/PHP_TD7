@@ -18,3 +18,26 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// Lister les séries
+Route::get('/list', 'SeriesController@index')->name('listSeries');
+
+
+// Supprimer une série
+Route::get('/delete/{id}', function ($id){
+
+})->name('deleteSerie');
+
+
+
+// Editer une série
+Route::get('/edit/{id}', function ($id){
+
+})->name('editSerie');
+
+
+// Ajouter une série
+Route::get('/add/serie/{id}', function($id){
+
+})->name('addSerie');

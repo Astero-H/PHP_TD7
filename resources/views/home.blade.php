@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Tableau de bord</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,8 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    Nombre de séries disponibles : {{$countSeries}}<br>
+                        <a href=" {{route('listSeries')}}"> Consulter la liste des séries</a>
 
-                    You are logged in!
                 </div>
             </div>
         </div>
