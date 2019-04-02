@@ -24,10 +24,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/list', 'SeriesController@index')->name('listSeries');
 
 
-// Supprimer une série
-Route::get('/delete/{id}', function ($id){
+// Nouvelle série
+Route::get('/create','SeriesController@create')->name('addSerie');
 
-})->name('deleteSerie');
+// Insérer série
+Route::post('/insert','SeriesController@store');
+
+Route::get('/destroy/{id}','SeriesController@destroy')->name('deleteSerie');
+
+
+// Supprimer une série
+/*Route::get('/delete/{id}', function ($id){
+
+})->name('deleteSerie');*/
 
 
 
@@ -37,7 +46,3 @@ Route::get('/edit/{id}', function ($id){
 })->name('editSerie');
 
 
-// Ajouter une série
-Route::get('/add/serie/{id}', function($id){
-
-})->name('addSerie');

@@ -12,3 +12,11 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
